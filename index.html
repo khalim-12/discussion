@@ -1,0 +1,26 @@
+<script>
+  function reverseLetters(str) {
+    let letters = str.match(/[a-zA-Z]/g);
+    //   console.log(letters);
+    if (!letters) return str;
+
+    let reversed = str
+      .split("")
+      .map((char) => {
+        if (/[a-zA-Z]/.test(char)) {
+          // console.log(`on true: ${char}`);
+          // console.log(`Letters: ${letters}`);
+          return letters.pop();
+        }
+        //console.log(`on false: ${char}`);
+        return char;
+      })
+      .join("");
+
+    return reversed;
+  }
+
+  let input = "a-bC-dEf=ghIj!!";
+  reverseLetters(input);
+  // console.log(result);
+</script>
