@@ -1,13 +1,51 @@
 <script>
-    function multiplyAll(arr) {
-  let product = 1;
-  // Only change code below this line
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+  //working with nested loop
+  function multiplyAll(arr) {
+    let product = 1;
+    // Only change code below this line
+    for (let i = 0; i < arr.length; i++) {
+      // console.log(arr[i]);
+    }
+    // Only change code above this line
+    return product;
   }
-  // Only change code above this line
-  return product;
-}
 
-multiplyAll([[1,2],[3,4],[5,6,7]]);
+  // multiplyAll([[1,2],[3,4],[5,6,7],[5,8]]);
+  function multiplyAll3(arr) {
+    let product = 1;
+    // Only change code below this line
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr[i].length; j++) {
+        // console.log(arr[i][j]);
+      }
+    }
+    // Only change code above this line
+    return product;
+  }
+
+  multiplyAll3([
+    [1, 2],
+    [3, 4],
+    [5, 6, 7],
+    [5, 8],
+  ]);
+  //console.log(first)
+  const styles = "padding: 19px; background-color:yellow;color:green";
+  // console.log("%chello console", styles);
+
+  /* Challenge:1
+   */
+  let x = Math.floor(Math.random() * (100 + 1));
+
+  let y = Math.floor(Math.random() * (50 + 1));
+  let Sum = `Sum: ${x} + ${y} = ` + (x + y);
+  let difference = `Difference: ${x} - ${y} = ` + (x - y);
+  let product = `Product: ${x} * ${y} = ` + x * y;
+  let quotient = `Quotient: ${x} / ${y} = ` + x / y;
+  let mod = `Sum: ${x} % ${y} = ` + (x % y);
+  console.log(Sum);
+  console.log(difference);
+  console.log(product);
+  console.log(quotient);
+  console.log(mod);
 </script>
