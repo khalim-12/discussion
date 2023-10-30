@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const library = [
+        {
+          title: "learn Chemistry",
+          author: "Ssuna Khalim",
+          status: {
+            own: true,
+            reading: false,
+            read: false,
+          },
+        },
+        {
+          title: "learn Islam",
+          author: "Ssuna swamaduh",
+          status: {
+            own: true,
+            reading: false,
+            read: false,
+          },
+        },
+        {
+          title: "learn Geography",
+          author: "Madam Lydia",
+          status: {
+            own: true,
+            reading: false,
+            read: false,
+          },
+        },
+      ];
+      let { title: firstBook } = library[2];
+      console.log(firstBook);
+      let to = JSON.stringify(library);
+      console.log(to);
+    </script>
+  </body>
+</html>

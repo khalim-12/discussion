@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // reduce method executes a user-supplied "reducer" callback function on each element of the array.
+      //syntax
+      //exp1
+      const array1 = [1, 2, 3, 4];
+      const initialValue = 0;
+      const sumWithInitial = array1.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        initialValue
+      );
+      console.log(sumWithInitial);
+      //exp2
+      const numbers = [2, 4, 6, 8, 10];
+      const sum = numbers.reduce(
+        (accumulate, currentValue) => accumulate + currentValue,
+        0
+      );
+      console.log(sum);
+      //exp3 cart
+      const cart = [
+        { id: 1, name: "Product 1", price: 130 },
+        { id: 2, name: "Product 2", price: 150 },
+        { id: 3, name: "Product 3", price: 170 },
+      ];
+
+      const total = cart.reduce((acc, product) => acc + product.price,0);
+      console.log(total);
+      // const arrayCart = [];
+      // for(let car of cart){
+      //     arrayCart.push(car.price)
+      // }
+      // const cartNumber = arrayCart.reduce((acc,curr) => acc+curr,0)
+      // console.log(cartNumber);
+
+      //   for(const key in cart){
+      //         console.log(key, cart[0]);
+      //     }
+
+      //   const arr = [];
+      // for(let car of cart) {
+      //       arr.push(car.name)
+      //       console.log(arr)
+      // }
+    </script>
+  </body>
+</html>

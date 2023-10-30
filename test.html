@@ -1,7 +1,9 @@
 <script>
+  // print("On test page")
   //working with nested loop
   function multiplyAll(arr) {
     let product = 1;
+
     // Only change code below this line
     for (let i = 0; i < arr.length; i++) {
       // console.log(arr[i]);
@@ -48,4 +50,18 @@
   console.log(product);
   console.log(quotient);
   console.log(mod);
+  /*End of challenge 1*/
+  //Working with date
+  let d;
+  d = new Date();
+  let product1 = 6;
+  let m = product1.toString();
+  m = m.__proto__;
+  console.log(m);
+  d = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDay()}`;
+  console.log(d);
+  // other methods on date
+  // s = Intl.DateTimeFormat('en-US').format(d)
+  // s = Intl.DateTimeFormat('default',{month: 'long'}).format(d)
+  // s = d.toLocalString('default',{month: 'short'})
 </script>

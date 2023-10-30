@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // if statement
+      let a = 7;
+      if (a == 7) {
+        console.log("statement is true");
+      } else {
+        console.log("statement is false");
+      }
+      // else-if & nesting
+      const d = new Date(2022, 2, 11, 8, 0, 0);
+      const hr = d.getHours();
+      const month = d.getMonth();
+
+      //console.log(hr);
+      console.log(month);
+      if (hr <= 10) {
+        console.log("a good morning");
+      } else if (hr >= 11) {
+        console.log("a good afternoon");
+      } else {
+        console.log("goodnite");
+      }
+      //ternary
+      const t = 5;
+      const c = t > 7 ? "good" : "bad";
+      //alert(c);
+      switch (month) {
+        case 1:
+          console.log("it is january");
+          break;
+
+        case 2:
+          console.log("it is february");
+          break;
+
+        case 1:
+          console.log("it is march");
+          break;
+
+        default:
+          console.log("it is neither of the months");
+          break;
+      }
+      //challenge calc
+      function calculator(num1, num2, operator) {
+        let result;
+        switch (operator) {
+          case "+":
+            result = num1 + num2;
+
+            break;
+          case "-":
+            result = num1 - num2;
+
+            break;
+          case "*":
+            result = num1 * num2;
+
+            break;
+          case "/":
+            result = num1 / num2;
+
+            break;
+          case "%":
+            result = num1 % num2;
+
+            break;
+          default:
+            result = "Invalid operator";
+            break;
+        }
+        console.log(result);
+        return result;
+      }
+      console.log(calculator(6, 5, "/"));
+      // truthy and false caveats
+      const children = 3;
+      if (!isNaN(children)) {
+        console.log(`You have ${children} children`);
+      } else {
+        console.log("Please enter number of children");
+      }
+      //checking for empty arrays
+      const posts = ["post One", "post Two"];
+      if (posts.length > 0) {
+        console.log("List Posts");
+      } else {
+        console.log("No posts");
+      }
+      //checking for empty objects
+      const user = {
+        name: 'Ben'
+      };
+      if(Object.keys(user).length > 0)  {
+         console.log('List User');
+      }else  {
+        console.log('No User')
+      }
+    </script>
+  </body>
+</html>

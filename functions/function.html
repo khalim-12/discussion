@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //functions,scope,& Execution Context
+      function Sum(...numbers) {
+        return numbers;
+      }
+      console.log(Sum(1, 2, 3, 4));
+      //random numbers function
+      //this called aregular function/declaration function
+      function getRandom(arr) {
+        const randomindex = Math.floor(Math.random() * arr.length);
+        const item = arr[randomindex];
+        console.log(item);
+      }
+      getRandom([2, 4, 6, 8, 10]);
+      //Expression function
+      const add = function (value) {
+        return value + "khalim";
+      };
+      const tryi = add(34);
+      console.log(tryi);
+      //Arrow function
+      const greet = (a) => a * 3;
+      console.log(greet(4));
+      //returning an object
+      const createObj = () => ({
+        name: "ssuna ben",
+      });
+      console.log(createObj());
+      //Arrow function in acall back
+      const numbers = [2, 3, 4, 5, 56];
+      numbers.forEach((n) => console.log(n))
+      
+      (
+        //IIFE(Immediately Invoked Function Expression)
+        function (mmm) {
+          console.log("hello" + mmm);
+        }
+      )("boxes");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Introduction to arrays
+        const arr = [23,23,45,65];
+        const fruits = ['apple','mango','orange'];
+       arr.push(199)
+       let x = arr.pop();
+       console.log(x)
+       console.log(arr);
+      
+    
+      console.log(`i love ${fruits[1]}`);
+      //array Nesting & Spread
+      const fr = [1,2,3,4];
+      const br = [11,22,33];
+      fr.push(br);
+    let  y= fr[4][1] 
+      console.log(y)
+      let c = fr.concat(br);
+      console.log(c)
+    //challenge
+    const ar = [1,2,3,4,5]
+    //expected output [6,5,4,3,2,1,0]
+    let c1 = ar.unshift(0);
+    let c2 = ar.push(6);
+    let c3 = ar.reverse();
+    console.log(ar);
+    //end of challenge
+    //challenge2
+    const arr1 = [1,2,3,4,5];
+    const arr2 = [5,6,7,8,9,10];
+    //combine them expected output arr3 = [1,2,3,4,5,6,7,8,9,10]
+   
+    const arr3 = arr1.slice(0,4).concat(arr2)
+    console.log(arr3)
+      </script>
+</body>
+</html>

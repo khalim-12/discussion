@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //challenge 1
+      //formula for fehranheit  ((f - 32) * 5)/9
+      // function getCelsius(d) {
+      //   return d * (9/5) + 32;
+      // }
+      // console.log(getCelsius(32));
+
+      const getCelsius = (d) => d * (9 / 5) + 32;
+      console.log(getCelsius(33));
+      //challenge 2
+      function minMax(arr) {
+        const min = Math.min(...arr);
+        const max = Math.max(...arr);
+
+        return {
+          min,
+          max,
+        };
+      }
+      console.log(minMax([2, 3, 4, 5, 7]));
+      //challenge 3
+      //working with IIFE
+      ((length, width0) => {
+        const area = length * width;
+        const output = `The area of rectangle with a length of ${length} and a width of ${width} is ${area}.`;
+        console.log(output);
+      })(15, 5);
+    </script>
+  </body>
+</html>

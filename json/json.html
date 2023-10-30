@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert("welcome to json");
+      const post = {
+        id: 1,
+        title: 'Post One',
+        body: 'This is a body'
+
+      };
+      //Convert to JSON string
+      const str = JSON.stringify(post)
+      //parse JSON
+      const obj = JSON.parse(str)
+      console.log(obj)
+    </script>
+  </body>
+</html>

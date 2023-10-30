@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //nest loop
+      //   for (let i = 1; i <= 10; i++) {
+      //     console.log("Number " + i);
+      //     for (let j = 1; j <= 5; j++) {
+      //       console.log(`${i} * ${j} = ${i * j}`);
+      //     }
+      //   }
+
+      //Loop thru arrays
+      //   const arr = [5, 6, 7, 8];
+      //   for (let i = 0; i <= arr.length; i++) {
+      //     //console.log(arr[i]);
+      //   }
+
+      //break and continue
+      //break stops the code wen a certain condition is hit;
+      //for continue, it skips a certain condition when is hit
+
+      //   //while loop and Do loop
+      //   let p=1;
+      //   do {
+      //     console.log("Number " + p);
+      //     p++;
+      //   } while (p <= 7);
+      //challenge
+      //print/log numbers from 1 to 100 for multiples of three
+      //print 'Fizz' instead of number
+      //for multiple of 5 print 'Buzz'
+      //for numbers which are multiples of both three and five print 'FizzBuzz'
+      for (i = 1; i <= 100; i++) {
+       if (i % 5 === 0 && i % 3 ===  0) {
+          console.log("FizzBuzz");
+        }
+       else  if (i % 5 === 0) {
+          console.log("Buzz");
+        } else if (i % 3 === 0) {
+          console.log("Fizz");
+        }  else {
+          console.log(i);
+        }
+      }
+      //for of Loops thru arrays
+        const items = ['book','table','chair','kite'];
+        for(let item of items){
+            console.log(item)
+
+        }
+        //for loops thru string
+        const str = 'HelloWorld';
+        for(let letter of str) {
+            console.log(letter)
+        }
+
+        //for in loop
+        const colorObj = {
+            color1: 'red',
+            color2: 'blue',
+            color3: 'Yellow',
+
+        };
+        for(const key in colorObj){
+            console.log(key, colorObj[key]);
+        }//
+        //forEach
+        const socials = ['twitter','Linkedin','Facebook','Instagram'];
+        socials.forEach(function(item){
+            console.log(item);
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="event.css" />
+  </head>
+  <body>
+    <h1>Adding & Removing Styles & Classes</h1>
+    <p class="card">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias non
+      nesciunt obcaecati delectus amet quaerat cum vero officia! Molestiae
+      corrupti veniam praes entium, quia odio magnam at assumenda impedit ab
+      aspernatur.
+    </p>
+    <ul class="item-list items">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li id="it">item 4</li>
+    </ul>
+    <!-- //input events -->
+
+    <h3 id="test">Test mouse Events</h3>
+    <h2>Shopping List</h2>
+    <form id="item-form" method="post">
+      <input
+        type="text"
+        class="form-input"
+        name="item"
+        id="item-input"
+        placeholder="enter Item"
+      /><br /><br />
+
+      <select id="priority-input" name="priority" class="form-input">
+        <option value="0">Select Priority</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option></select
+      ><br /><br />
+      <input type="checkbox" id="limit" />
+      Recurring Item
+      <br />
+      <br />
+      <div class="form-control">
+        <button type="submit" id="btn">
+          <i class="fa-solid fa-plus"></i> Add Item
+        </button>
+      </div>
+    </form>
+    <br />
+    <button class="btn1">Run</button>
+    <button class="btn2">Test</button>
+    <button class="btn3">Remove</button>
+    <a href="www.google.com">Google</a>
+
+    <script src="event.js"></script>
+  </body>
+</html>

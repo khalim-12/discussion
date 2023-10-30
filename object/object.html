@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//object litarel
+const person = {
+    name: "patrick",
+    email: "pat@gmail.com",
+    phone: 22222222,
+    address: {
+        street: '123 kampala road',
+        city: 'Boston',
+        state: 'Misota'
+    },
+    hobbies: ['music','sports']
+};
+let x;
+alert(person.address.city);
+x = person['phone'];
+x = person.hobbies[1];
+const dd = [23,45,67,88,99];
+const [first,second,...rest] = dd;
+console.log(x);
+console.log(first,second,rest);
+    </script>
+</body>
+</html>
